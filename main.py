@@ -23,14 +23,16 @@ rep=Counter()
 for row in l:
     rep+=Counter([row[0]])
 
-rep=str(rep)
-rep=rep.split(',')
-rep[0]=rep[0].split('Counter({')
 
+
+rep2=rep
+print (type(rep2))
+text=str(rep2)
+text=str(str(text.split("{")[1]).split("}")[0]).split(",")  # To convert collections.counter to type list
+
+i=1
 with open('Results.txt','w') as t:
-    for each_element in rep:
-        if isinstance(each_element,list):
-            each_element=each_element[1]
-        
+    for each_element in text:
+        i+=1
         t.write(each_element+'\n\n')
-        
+print (i)
