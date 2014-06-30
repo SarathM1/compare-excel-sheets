@@ -30,9 +30,7 @@ print (type(rep2))
 text=str(rep2)
 text=str(str(text.split("{")[1]).split("}")[0]).split(",")  # To convert collections.counter to type list
 
-i=1
+
 with open('Results.txt','w') as t:
     for each_element in text:
-        i+=1
         t.write(each_element+'\n\n')
-print (i)
