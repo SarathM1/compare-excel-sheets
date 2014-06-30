@@ -594,5 +594,5 @@
 
  'DRESSING PAD': 1
 
- 'OMESAC - 20 MG': 1})
+ 'OMESAC - 20 MG': 1
 
